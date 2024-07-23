@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Bonsai freelance solution</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+    <nav class="flex justify-between items-center py-4 px-4 lg:py-2 lg:justify-around">
+        <div class="logo ml-6">
+            <img class="max-w-max w-36" src="logo.svg" alt="Bonsai Logo">
+        </div>
+
+        <div class="ham-burger flex flex-col gap-1.5 mr-16 lg:hidden">
+            <div class="lines w-8 bg-black h-[3px]"></div>
+            <div class="lines w-8 bg-black h-[3px]"></div>
+            <div class="lines w-8 bg-black h-[3px]"></div>
+        </div>
+
+        <div class="main-nav hidden lg:block">
+            <ul class="flex gap-8">
+                <li class="py-4 px-2 text-lg">Product</li>
+                <li class="py-4 px-2 text-lg">Template</li>
+                <li class="py-4 px-2 text-lg">Pricing</li>
+                <li class="py-4 px-2 text-lg">Reviews</li>
+            </ul>
+        </div>
+
+        <div class="buttons hidden lg:flex gap-4">
+            <button class="rounded-md border-2 border-green-600 py-3 text-xs font-bold text-green-600 px-7">LOG IN</button>
+            <button class="bg-green-600 rounded-md border-2 border-green-600 py-3 text-xs font-bold text-white px-7">START
+                FREE</button>
+        </div>
+    </nav>
+
+    <div class="sub-nav h-screen absolute inset-0 z-10 bg-white hidden ">
+        <nav>
+            <div class="flex justify-center items-center gap-8 py-6 px-4">
+                <div class="logo ml-16 w-4/5 h-10">
+                    <img class="max-w-max w-10 h-10" src="logomini.svg" alt="Bonsai Logo">
+                </div>
+
+                <div class="cross flex flex-col gap-1.5 mr-16 lg:hidden">
+                    <div class="lines w-8 bg-black h-[3px] rotate-45 translate-y-[9px]"></div>
+                    <div class="lines w-8 bg-black h-[3px] opacity-0"></div>
+                    <div class="lines w-8 bg-black h-[3px] -rotate-45 -translate-y-[9px]"></div>
+                </div>
+            </div>
+
+            <div class="navigation flex flex-col items-center gap-4">
+                <ul class="divide-y-2 w-4/5 mt-8">
+                    <li class="py-4 px-2 text-md">Product</li>
+                    <li class="py-4 px-2 text-md">Template</li>
+                    <li class="py-4 px-2 text-md">Pricing</li>
+                    <li class="py-4 px-2 text-md">Reviews</li>
+                    <li></li>
+                </ul>
+                <button class="w-4/5 rounded-md border-2 border-green-600 py-3 text-xs font-bold text-green-600">LOG
+                    IN</button>
+                <button
+                    class="w-4/5 bg-green-600 rounded-md border-2 border-green-600 py-3 text-xs font-bold text-white">START
+                    FREE</button>
+            </div>
+        </nav>
+    </div>
+
+    <section class="relative overflow-hidden">
+        <div class="bg-[#f2faff] absolute h-[120%] rounded-[6.6vw] block w-[90%] -top-[88%] left-0 right-[-23%] bottom-auto -rotate-[23deg] -z-10 "></div>
+
+        <div class="pricing flex lg:gap-8 justify-center lg:mt-28">
+            <div class="">
+                <h1 class="text-3xl font-serif my-10 mx-6 lg:text-4xl">Plans & Pricing</h1>
+            </div>
+            <div class="toogle flex items-center justify-center">
+                <p class="text-lg font-serif mx-8">MONTHLY</p>
+                <label class="switch relative inline-block w-14 h-8 ">
+                    <input type="checkbox" class="peer ch opacity-0 h-0 w-0 ">
+                    <span class="slider absolute inset-0 cursor-pointer bg-green-600 duration-[.4s] before:absolute before:h-6 before:w-6 before:left-1 before:bottom-1 before:bg-white before:duration-[.4s] peer-checked:bg-red-500 peer-checked:before:translate-x-6 rounded-full before:rounded-full" ></span>
+                  </label>
+                  <p class="text-lg font-serif mx-8">YEARLY</p>
+            </div>
+        </div>
+
+        <div class="monthly card-wrapper pt-10 flex flex-col justify-between flex-wrap mx-10 my-6 lg:flex-row lg:justify-center lg:gap-4" >
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.37%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        24
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.67%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        24
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.67%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        24
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+        </div>
+        <div class="yearly card-wrapper pt-10 hidden flex-col justify-between flex-wrap mx-10 my-6 lg:flex-row lg:justify-center lg:gap-4" >
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.37%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        36
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.67%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        36
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+            <div class="card flex flex-col px-6 pt-10 pb-3 border-[0.3px] border-[rgba(2,4,69,.15)] rounded bg-[#fbfcff] shadow-md mb-8 lg:max-w-[26.67%]">
+                <div class="text-lg font-semibold">Starter</div>
+                <p class="max-w-[90%]">Ideal for freelancers and contractors just startinng out</p>
+                <div class="prize-box w-full mt-5 border-b-2 border-green-600">
+                    <div class="price flex gap-3 items-end text-6xl font-semibold">
+                        <span class="symbol relative top-2 mr-2 self-start text-3xl font-normal">$</span>
+                        36
+                        <span class="text-lg font-normal">/MONTH</span>
+                    </div>
+                </div>
+                <div class="plan-features mb-6 pt-10">
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                    <div class="tick flex items-center pb-5 text-base">
+                        <img src="tick.svg" alt="tick icon" class="w-3 m-2">
+                        <div>Unlimited client and projects</div>
+                    </div>
+                </div>
+                <div class="w-full mt-auto">
+                    <button
+                    class="w-full bg-green-600 rounded-md border-2 border-green-600 py-6 text-xs font-bold text-white">START
+                    FREE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-between flex-wrap mx-10 my-6 lg:justify-center lg:gap-4 lg:items-center">
+            <div class="mt-20 w-full">
+                <div class="mt-5 mb-10">
+                    <h2 class="font-normal font-serif text-4xl text-center">Super charge your work with add-ons</h2>
+                </div>
+            </div>
+            <div class="add-on-box mb-3 pt-8 pb-6 px-10 flex justify-between items-center rounded-lg shadow-lg lg:w-4/5">
+                <div class="left-box w-4/5 max-w-xl">
+                    <div class="text-xl font-semibold">Collaborators</div>
+                    <p class="font-light">Invite other users for specific projects for limited access and functionaltiy</p>
+                </div>
+                <div class="right-box w-1/5 py-9">
+                    <div class="text-3xl font-bold text-center">
+                        FREE
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="add-on-box mb-3 pt-8 pb-6 px-10 flex justify-between items-center rounded-lg shadow-lg lg:w-4/5">
+                <div class="left-box w-4/5 max-w-xl">
+                    <div class="text-xl font-semibold">Collaborators</div>
+                    <p class="font-light">Invite other users for specific projects for limited access and functionaltiy</p>
+                </div>
+                <div class="right-box w-1/5 py-9">
+                    <div class="text-3xl font-bold text-center">
+                        FREE
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="add-on-box mb-3 pt-8 pb-10 px-10 flex justify-between items-center rounded-lg shadow-lg lg:w-4/5">
+                <div class="left-box w-4/5 max-w-xl">
+                    <div class="text-xl font-semibold">Collaborators</div>
+                    <p class="font-light">Invite other users for specific projects for limited access and functionaltiy</p>
+                    <a href="" class="font-semibold text-green-600 cursor-pointer"> <div>Learn more</div> </a>
+                </div>
+                <div class="right-box w-1/5 py-9">
+                    <div class="text-3xl font-bold text-center">
+                        FREE
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>           
+    </section>
+
+    <section class="py-10 relative">
+        <div class="px-10">
+            <div class="w-full max-w-4xl mx-auto">
+                <div class="flex justify-between items-center rounded-lg bg-[#f2faff] py-12 px-8 text-center lg:py-16 lg:px-12">
+                    <div class="w-4/6 font-serif text-5xl">
+                        It's <span class="text-green-600">your</span> Business.
+                        <br>
+                        We're here to help it grow.
+                    </div>
+                    <div>
+                        <button class="bg-green-600 rounded-md border-2 border-green-600 py-3 text-xs font-bold text-white px-7">START FREE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 relative">
+        <div class="px-10">
+            <div class="w-full max-w-4xl mx-auto">
+                <div class="m-10 mx-0">
+                    <h2 class="text-center text-green-600 mt-5 mb-3 text-3xl font-bold">Frequently asked questions</h2>
+                </div>
+                <div>
+                    <h2 class="accordian mx-[9%] bg-[url('icon.png')] bg-[length:auto_20px] bg-no-repeat bg-right mt-5 mb-3 text-2xl  cursor-pointer hover:text-green-600 font-bold ">How does the free trial work?</h2>
+                    <div class="panel hidden mx-[9%]">
+                        <p class="mb-3 leading-7">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="accordian mx-[9%] bg-[url('icon.png')] bg-[length:auto_20px] bg-no-repeat bg-right mt-5 mb-3 text-2xl  cursor-pointer hover:text-green-600 font-bold ">How does the free trial work?</h2>
+                    <div class="panel hidden mx-[9%]">
+                        <p class="mb-3 leading-7">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordian mx-[9%] bg-[url('icon.png')] bg-[length:auto_20px] bg-no-repeat bg-right mt-5 mb-3 text-2xl  cursor-pointer hover:text-green-600 font-bold ">How does the free trial work?</h2>
+                    <div class="panel hidden mx-[9%]">
+                        <p class="mb-3 leading-7">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordian mx-[9%] bg-[url('icon.png')] bg-[length:auto_20px] bg-no-repeat bg-right mt-5 mb-3 text-2xl  cursor-pointer hover:text-green-600 font-bold ">How does the free trial work?</h2>
+                    <div class="panel hidden mx-[9%]">
+                        <p class="mb-3 leading-7">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-10 pb-40 px-[5%] lg:py-24 lg:px-[16%]">
+        <div class="flex max-w-7xl mx-auto justify-between flex-wrap lg:flex-none ">
+            <div class="block w-full mt-5 justify-between items-start flex-wrap lg:w-[30%]">
+                <div class="w-full mb-6 text-lg lg:mb-10 font-semibold ">Product</div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">proposals</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Contracts</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Invoicing</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Client CRM</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Time Tracking</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Task Tracking</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Forms</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Accounting</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Bonsai Tax</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Bonsai cash</a>
+                </div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px]  text-green-600">Pricing</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Bonus Reviews</a>
+                </div>
+            </div>
+            <div class="block w-full mt-5 justify-between items-start flex-wrap lg:w-[30%]">
+                <div class="w-full mb-6 text-lg lg:mb-10 font-semibold ">Free Resources</div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Freelance Resources</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Freelance Blog by Bonsai</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">How to Write a Contract</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Online Signature Maker</a>
+                </div>
+                <div class="w-full mb-6 text-lg lg:mb-10 font-semibold ">Templates</div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Invoice Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Proposal Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Contract Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Agreement Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Scope of Work Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Quote Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Credit Note Templates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Estimate Templates</a>
+                </div>
+            </div>
+            <div class="block w-full mt-5 justify-between items-start flex-wrap lg:w-[30%]">
+                <div class="w-full mb-6 text-lg lg:mb-10 font-semibold ">Product</div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">about</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">carrers</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Support</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Linkedin</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">twitter</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Privacy policy</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Legal</a>
+                </div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400 ">Affiliates</a>
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400">Write for us</a>
+                </div>
+                <div class="flex mb-6 flex-col items-start w-[47%] lg:w-auto">
+                    <a href="" class="mb-0.5 font-light no-underline leading-8 tracking-[0.11px] text-gray-400 ">compasions</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
